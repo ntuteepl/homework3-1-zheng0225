@@ -15,9 +15,10 @@ for(a=2;a<num-1;a++)
     else{
 
         printf("yes");
-    }
+        break;
+    }}
 return 0;
-}
+
 
 
 
