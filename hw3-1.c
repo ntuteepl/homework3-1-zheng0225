@@ -3,21 +3,24 @@
 
 int main()
 {
-int num,a;
-scanf("%d",&num);
-for(a=2;a<num-1;a++)
-{
-    if (num%a==0)
+    int a,num,count=0;
+    scanf("%d",&num);
+    for(a=1;a<num+1;a++)
     {
-           printf("no");
-          break;
-    }
-    else{
+        if(num%a==0)
+        {
+            count=count+1;
+        }
 
-        printf("yes");
-        break;
-    }}
-return 0;
+    }
+    if(count==2)
+        {
+            printf("yes");
+        }
+        else
+        {printf("no");}
+}
+
 
 
 
